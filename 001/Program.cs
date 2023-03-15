@@ -11,10 +11,31 @@ arr[4]="WWWWWW";
 arr[5]="P";                                 
 string [] arr2=new string [0];  
 
+void PrintArr(string[]arr)
+{
+    for (int i = 0; i<arr.Length; i++)
+    {
+          System.Console.Write($" {arr[i]}");  
+    }
+}
 
+void OperationArr(string[]arr)
+{
+    for (int j = 0; j < arr.Length; j++)
+    {
+       if (arr[j].Length<=3)
+        {
+          System.Console.Write($" {arr[j]}");  
+        }
+    }
 
+}
 
-
+System.Console.Write("Первоначальный массив");
+PrintArr(arr);
+System.Console.WriteLine();
+System.Console.Write("То из чего надо создать новый массив");
+OperationArr(arr);
 
 
 
