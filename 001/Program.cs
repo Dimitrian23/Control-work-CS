@@ -36,7 +36,26 @@ PrintArr(arr);
 System.Console.WriteLine();
 System.Console.Write("То из чего надо создать новый массив");
 OperationArr(arr);
+System.Console.WriteLine();
+System.Console.Write("Новый массив!");
 
+foreach (string stroka in arr)
+{
+    int r=stroka.Length;
+    if(r<=3)
+    {
+        Array.Resize(ref arr2,arr2.Length + 1);
+        arr2[arr2.Length - 1] = stroka;
+    }
+}
+
+foreach (string stroka in arr2)
+        {
+            Console.Write($" {stroka}");
+        }
+
+
+   
 
 
 
